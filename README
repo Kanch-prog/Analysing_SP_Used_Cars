@@ -31,6 +31,8 @@ The dataset contains various features of used cars, including:
                                                               Steps and Analysis:
                                                               Data Loading and Preparation:
 
+This was followed in the tutorial https://www.geeksforgeeks.org/analyzing-selling-price-of-used-cars-using-python/?ref=lbp and the dataset was provided by https://archive.ics.uci.edu/ml/machine-learning-databases/autos/imports-85.data
+
 1.Load the dataset and assign meaningful column names.
 Reason: Prepare the data for analysis by ensuring it is correctly formatted and labeled.
 Identifying Missing Values:
