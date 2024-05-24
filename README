@@ -1,0 +1,103 @@
+Analyzing selling price of used cars using Python
+
+Objective:
+The primary goal of this project is to analyze a dataset of used cars to understand which features significantly affect their selling prices. By exploring and visualizing the data, the project aims to provide insights into the factors that influence car prices, such as brand, engine size, and drive wheels.
+
+Dataset:
+The dataset contains various features of used cars, including:
+
+                                                              Symboling
+                                                              Normalized losses
+                                                              Make (Brand)
+                                                              Fuel type
+                                                              Aspiration
+                                                              Number of doors
+                                                              Body style
+                                                              Drive wheels
+                                                              Engine location
+                                                              Wheel base
+                                                              Length, width, height
+                                                              Curb weight
+                                                              Engine type
+                                                              Number of cylinders
+                                                              Engine size
+                                                              Fuel system
+                                                              Bore, stroke
+                                                              Compression ratio
+                                                              Horsepower
+                                                              Peak RPM
+                                                              City and highway MPG
+                                                              Price
+                                                              Steps and Analysis:
+                                                              Data Loading and Preparation:
+
+1.Load the dataset and assign meaningful column names.
+Reason: Prepare the data for analysis by ensuring it is correctly formatted and labeled.
+Identifying Missing Values:
+
+2. Check for missing values in the dataset.
+Reason: Identify any gaps in the data that need to be addressed to ensure accurate analysis.
+Converting Units:
+
+3. Convert city MPG to liters per 100 kilometers (L/100km).
+Reason: Standardize units for better interpretability and comparison.
+Handling Missing Values and Data Types:
+
+4. Remove rows with missing price data and convert price from string to integer.
+Reason: Ensure that the price column is in a suitable format for numerical analysis.
+Normalizing Values:
+
+5. Normalize length, width, and height.
+Reason: Scale the features to a range of [0,1] to facilitate comparison and analysis.
+Binning Prices:
+
+6. Bin prices into categories (Low, Medium, High).
+Reason: Group continuous price values into discrete categories for categorical analysis and visualization.
+Converting Categorical to Numerical Variables:
+
+7. Use one-hot encoding for categorical variables (e.g., fuel type).
+Reason: Transform categorical variables into a format suitable for numerical analysis and machine learning models.
+Visualizing Price Distributions:
+
+8. Create boxplots to visualize the distribution of prices and their relationship with categorical variables (e.g., drive wheels).
+Reason: Understand the spread and central tendency of price data, and identify any outliers or patterns.
+Analyzing Relationships with Scatter Plots:
+
+9. Plot scatter plots and regression lines for features like engine size vs. price.
+Reason: Visualize and quantify the relationship between numerical features and price.
+Grouping and Pivot Tables:
+
+10. Group data by categorical variables and create pivot tables.
+Reason: Summarize data to identify patterns and relationships between categorical variables and price.
+Heatmaps:
+
+11. Create heatmaps to visualize the summarized data from pivot tables.
+Reason: Provide a visual representation of how different combinations of categorical variables affect price.
+ANOVA Analysis:
+
+12. Perform ANOVA to test the significance of categorical variables (e.g., make) on price.
+Reason: Determine if there are statistically significant differences in prices between different groups.
+Correlation Analysis:
+
+13. Use regression plots to analyze the correlation between numerical features (e.g., engine size) and price.
+Reason: Identify and quantify the strength of relationships between features and price.
+
+    What features of cars affect their prices?
+    
+    Answered by: ANOVA analysis, scatter plots, boxplots, heatmaps.
+    Features analyzed: Brand (make), engine size, drive wheels, body style.
+    Does the brand (make) of the car affect its price?
+    
+    Answered by: ANOVA analysis.
+    Details: ANOVA test comparing prices of different brands shows the significance of brand on car prices.
+    Does the engine size affect the selling price?
+    
+    Answered by: Scatter plots, correlation analysis.
+    Details: Regression and scatter plots of engine size vs. price show a positive correlation.
+    How do drive wheels and body style impact car prices?
+    
+    Answered by: Boxplots, pivot tables, heatmaps.
+    Details: Visualizations show how different configurations of drive wheels and body styles affect prices.
+    Is there a significant difference in prices between cars with different fuel types?
+    
+    Answered by: One-hot encoding for categorical analysis (suggested step, not fully implemented in the provided code).
